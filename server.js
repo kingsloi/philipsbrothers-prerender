@@ -7,7 +7,7 @@ var server = prerender({
     accessLog: {
         // Check out the file-stream-rotator docs for parameters
         fileStreamRotator: {
-            filename: '/home/forge/default/public/logs/access-%DATE%.log',
+            filename: '/home/forge/default/logs/access-%DATE%.log',
             frequency: 'daily',
             date_format: 'YYYY-MM-DD',
             verbose: false
