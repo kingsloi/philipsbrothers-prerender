@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 var prerender = require('./lib');
 
+// disable expiry of redis cache
+process.env['PAGE_TTL'] = 0;
+
 var server = prerender({
     workers: process.env.PRERENDER_NUM_WORKERS,
     iterations: process.env.PRERENDER_NUM_ITERATIONS,
